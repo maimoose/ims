@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard - Inventory Management System</title>
+	<script src="https://kit.fontawesome.com/acc84a764b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div id="dashMainContainer">
+        <div class="dash_sidebar" id="dash_sidebar">    
+            <h3 class="dashLogo" id="dashLogo">IMS</h3>
+            <div class="dashSidebarUser">
+                <img src="images/gg.jpg" alt="User image" id="Userimg">
+                <span>Gaara</span>
+            </div>
+            <div class="dashSideMenus">
+                <ul class="dashMenuList">
+                    <li class="menuActive">
+                        <a href=""><i class="fa fa-dashboard"></i> <span class="menuTxt">Dashboard</span></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa fa-dashboard"></i><span class="menuTxt">Dashboard</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashContentContain" id="dashContentContain">
+            <div class="dashTopNav">
+                <a href="" id="toggleBtn"><i class="fa fa-navicon"></i></a>
+                <a href="" id="logOut" ><i class="fa fa-power-off"></i> Log-out</a>
+            </div>
+            <div class="dashContent">
+                <div class="dashMainContent">
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var sideBarIsOpen = true;
+      toggleBtn.addEventListener( 'click', (event) => {
+        event.preventDefault(); // this is to stop and stay the new change on click
+        
+        if(sideBarIsOpen){
+            dash_sidebar.style.width ='10%';
+            dash_sidebar.style.transition = '0.3s all';
+            dashContentContain.style.width = '90%';
+            dashLogo.style.fontSize= '60px';
+            Userimg.style.width = '60px';
+            menuIcons = document.getElementsByClassName('menuTxt');
+
+            for(var i=0; i< menuIcons.length; i++){
+                menuIcons[i].style.display = 'none';
+            }
+            document.getElementsByClassName('dashMenuList')[0].style.textAlign = 'center';
+            sideBarIsOpen = false;
+        }else {
+            dash_sidebar.style.width ='20%';
+            dashContentContain.style.width = '80%';
+            dashLogo.style.fontSize= '80px';
+            Userimg.style.width = '80px';
+            menuIcons = document.getElementsByClassName('menuTxt');
+
+            for(var i=0; i< menuIcons.length; i++){
+                menuIcons[i].style.display = 'inline-block';
+            }
+            document.getElementsByClassName('dashMenuList')[0].style.textAlign = 'left';
+            sideBarIsOpen = true;
+        }
+    
+      });
+</script>  
+</body>
+</html>

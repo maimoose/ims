@@ -1,0 +1,419 @@
+*,*::before,*::after{box-sizing:border-box}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}ul[role="list"],ol[role="list"]{list-style:none}html:focus-within{scroll-behavior:smooth}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+body#loginBody{
+	background: url('../images/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+body{	
+	font-family: arial;
+}
+
+div.loginHeader{
+	text-align: center;
+}
+.alignLeft{
+	text-align: left;
+}
+div.loginHeader{
+	margin-bottom: 150px;
+}
+div.loginHeader h1{
+	font-size: 100px;
+	color:#f685a2;
+	padding:0px;
+	margin:0px;
+}
+div.loginHeader p{
+	color:#ffdae3;
+	font-size: 50px;
+	margin:0px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+div.loginHeader p:after{
+	content:'';
+	display: block;
+	height: 5px;
+	background: #f685a2;
+	margin:0 auto;
+}
+
+div.loginBody form{
+	margin:0 auto;
+	width: 450px;
+	background: rgba(0,0,0,.5);
+	padding:50px;
+	border:2px solid #fff;
+	border-radius: 8px;
+}
+
+div.loginInputsContainer{
+	margin-top:30px;
+}
+
+div.loginInputsContainer label{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;	
+	font-weight: bold;
+	color:#fff;
+}
+
+div.loginInputsContainer input{
+	height: 30px;
+	width:100%;
+	border:2px solid #d40339;
+	font-size:20px;
+	padding:5px;
+	text-align: center;
+	font-style: italic;
+}
+
+div.loginButtonContainer{
+	margin-top:40px;
+	text-align: center;
+}
+
+div.loginButtonContainer button{
+	font-size: 20px;
+	padding: 10px 40px;
+	background: #f685a2;
+	border:none;
+	color: #fff;
+}
+
+/* homepage*/ 
+
+div.header{
+	width:100%;
+	background: #f685a2;
+	padding: 10px 0px;
+	text-align: right;
+}
+
+.header a{
+	font-size: 20px;
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 2px solid transparent;
+}
+
+.header a:hover{
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+div.banner{
+	background: url('../images/banner.jpg') no-repeat center center fixed;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: 80vh;
+}
+
+.homepageContainer{
+	width: 100%;
+	max-width: 1000px;
+	/*height: 70vh;		*/
+	margin: 0 auto;
+}
+
+.bannerHeader h1{
+	font-size: 100px;
+	color: #f685a2;
+	line-height: 100%;
+}
+
+.bannerHeader p{
+	font-size: 40px;
+	color: #f685a2;
+	/*margin-top: -30px;*/
+	text-transform: uppercase;
+}
+
+.bannerTagline{
+	font-size: 25px;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.bannerIcon{
+	margin-top: 50px;
+}
+
+.bannerIcon a{
+	font-size: 30px;
+	margin-left: 40px;
+	padding: 7px 10px;
+	background: rgba(0,0,0,.5);
+	color: #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+
+.bannerIcon a:first-child{
+	margin-left: 0px;
+}
+
+
+.bannerIcon a:hover{
+	color: #fff;
+	font-size: 25px;
+	background: #f685a2;
+	transition: 0.5s all;
+}
+
+.hpFeats{
+	display: flex;
+	flex-direction: row;
+	padding: 50px 0px;
+}
+
+.hpFeat{
+	padding: 10px 20px;
+	text-align: center;
+	width: 33%;
+}
+
+.hpFeat:hover{
+	border-top: 2px solid #f685a2;
+	border-bottom: 2px solid #f685a2;
+	transition: 0.5s all;
+}
+
+.featID{
+	height: 80px;
+	width: 80px;
+	font-size: 50px;
+	display: inline-block;
+	background: #f685a2;
+	color: #fff;	
+	padding-top: 5px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.featTitle{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.featDes{
+	color: #848484;
+	font-size: 15px;
+}
+
+.hpNotified{
+	background: #e3e3e3;
+	padding: 50px 0px;
+}
+
+.hpNotified h3{
+	margin-bottom: 20px;
+}
+
+.hpNotifiedContainer{
+	display: flex;
+	flex-direction: row;
+}
+		
+.hpNotifiedContainer > div{
+	width: 50%;
+}
+
+.emailForm{
+	width: 40%;
+}
+
+.video{
+	width: 60%;
+	text-align: center;
+}
+
+.hpNotified p{
+	color: #848484;
+	line-height: 150%;
+	margin-bottom: 30px;
+}
+
+.formContainer{
+	width: 80%;
+	position: relative;
+}
+
+.formContainer input{
+	width: 100%;
+	padding: 15px 10px;
+	border-radius: 15px;
+	border: none;
+}
+
+.formContainer button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	font-size: 22px;
+	padding: 0px 10px;
+	background: #f685a2;
+	border: none;
+	color: #fff;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.formContainer input:focus{
+	outline: none;
+}
+
+iframe{
+	width: 80%;
+	height: 120%;
+}
+
+.social{
+	text-align: center;
+	padding: 70px 0px 30px 0px;
+}
+
+.socTitle{
+	font-size: 30px;
+}
+
+.socText{
+	margin-top: 20px;
+	margin-bottom: 25px;
+	color: #848484;
+	font-size: 20px
+}
+
+
+.socIconCon a{
+	font-size: 23px;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	padding-top: 7px;
+	background: #d4d4d4;
+	border-radius: 50%;
+	color: #fff;
+	margin-left: 20px;
+}
+
+.socIconCon a:hover{
+	background: #f685a2;
+	transition: 0.3s all;
+}
+
+.footer{
+	background-color: #e3e3e3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;	
+}
+
+.footer a{
+	color: #848484;
+	margin-left: 30px;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	font-weight: bold;
+	color: #f685a2;
+	transition: 0.5s all;
+}
+/* dash board*/ 
+
+#dashMainContainer{
+	display: flex;
+	flex-direction: row;
+}
+
+.dash_sidebar{
+	width: 20%;
+	height: 100vh;
+	background: #323232;
+}
+
+.dashContentContain{
+	width: 70%;
+	background: #d4d4d4;
+}
+
+.dashLogo{
+	color: #f685a2;
+	font-size: 60px;
+	text-align: center;
+}
+
+.dashSidebarUser img{
+	width: 80px;
+	display: inline-block;
+	border-radius: 10%;
+	border: 2px solid #ffdae3;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.dashSidebarUser span{
+	top: 20%;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	display: inline-block;
+}
+
+.dashMenuList{
+	padding: 20px;
+}
+
+.dashMenuList li{
+	padding: 15px 15px;
+	text-transform: uppercase;
+}
+
+.dashMenuList li:hover{
+	background: #f685a2;
+}
+
+.dashMenuList li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	height: 100%;
+	display: block;
+}
+
+.menuActive{
+	background: #f685a2;
+}
+
+.dashTopNav{
+	background: #fff;
+	padding: 20px;
+}
+
+.dashTopNav a{
+	color: #848484;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#logOut{
+	float: right;
+}
+
+.dashContent{
+	padding: 50px 10px 10px 10px;
+}
+
+.dashMainContent{
+	background: #fff;
+	min-height: 800px;
+	height: 100%;
+}
